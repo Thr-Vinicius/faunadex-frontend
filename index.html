@@ -3,43 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Faunadex - Coleção</title>
+    <title>Faunadex - Arena</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="colecao-cartas">
-
-        <div class="carta-container">
-            <h2>Curupira Guardião</h2>
-            <p class="raridade">Raridade: Épica</p>
-
-            <img src="curupira.jpg" alt="Ilustração do Curupira">
-
-            <ul>
-                <li>Força Cima: 8</li>
-                <li>Força Direita: 6</li>
-                <li>Força Baixo: 7</li>
-                <li>Força Esquerda: 9</li>
-            </ul>
+    <div id="modal-lgpd" class="modal">
+        <div class="modal-conteudo">
+            <h2>Aviso de Privacidade</h2>
+            <p>
+                Este jogo utiliza apenas informações visuais das cartas para simular uma partida.
+                Nenhum dado pessoal sensível será coletado.
+            </p>
+            <button onclick="aceitarPrivacidade()">Aceitar e Jogar</button>
         </div>
+    </div>
 
-        <div class="carta-container">
-            <h2>Onça-Pintada Selvagem</h2>
-            <p class="raridade">Raridade: Lendária</p>
+    <header>
+        <h1>Faunadex Arena</h1>
+        <p>Tabuleiro 3x3 inspirado na fauna, flora e folclore brasileiro</p>
+    </header>
 
-            <img src="onca.jpg" alt="Ilustração da Onça-Pintada">
+    <main>
 
-            <ul>
-                <li>Força Cima: 9</li>
-                <li>Força Direita: 8</li>
-                <li>Força Baixo: 6</li>
-                <li>Força Esquerda: 7</li>
-            </ul>
-        </div>
+        <section id="tabuleiro">
+            <div class="slot" id="slot_1">1</div>
+            <div class="slot" id="slot_2">2</div>
+            <div class="slot" id="slot_3">3</div>
+            <div class="slot" id="slot_4">4</div>
+            <div class="slot" id="slot_5">5</div>
+            <div class="slot" id="slot_6">6</div>
+            <div class="slot" id="slot_7">7</div>
+            <div class="slot" id="slot_8">8</div>
+            <div class="slot" id="slot_9">9</div>
+        </section>
+
+        <section id="mao-jogador">
+
+            <div class="carta">
+                <h3>Curupira Guardião</h3>
+                <img src="curupira.jpg" alt="Ilustração do Curupira">
+                <p>Guardião das florestas brasileiras, protege a natureza com velocidade e astúcia.</p>
+            </div>
+
+            <div class="carta">
+                <h3>Onça-Pintada</h3>
+                <img src="onca.jpg" alt="Ilustração da Onça-Pintada">
+                <p>Predadora poderosa da mata brasileira, possui força e presença dominante.</p>
+            </div>
+
+            <div class="carta">
+                <h3>Arara-Azul</h3>
+                <img src="arara.jpg" alt="Ilustração da Arara-Azul">
+                <p>Ave rara e colorida, representa beleza, liberdade e equilíbrio da natureza.</p>
+            </div>
+
+            <div class="carta">
+                <h3>Vitória-Régia</h3>
+                <img src="vitoria-regia.jpg" alt="Ilustração da Vitória-Régia">
+                <p>Planta aquática amazônica, conhecida por sua resistência e beleza natural.</p>
+            </div>
+
+            <div class="carta">
+                <h3>Ipê-Amarelo</h3>
+                <img src="ipe-amarelo.jpg" alt="Ilustração do Ipê-Amarelo">
+                <p>Árvore símbolo de força e renovação, trazendo energia ao campo de batalha.</p>
+            </div>
+
+        </section>
 
     </main>
+
+    <script>
+        function aceitarPrivacidade() {
+            document.getElementById("modal-lgpd").style.display = "none";
+        }
+    </script>
 
 </body>
 
