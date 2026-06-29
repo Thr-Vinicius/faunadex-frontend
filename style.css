@@ -3,50 +3,104 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding-top: 50px;
+    padding: 30px;
 }
 
-.colecao-cartas {
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 12px;
+}
+
+.slot {
+    background-color: #16213e;
+    border: 3px solid #e94560;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#mao-jogador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.carta-container {
+.carta {
     background-color: #16213e;
-    width: 300px;
-    border: 4px solid #e94560;
+    width: 200px;
+    border: 3px solid #e94560;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-.carta-container h2 {
+.carta h3 {
     margin-top: 0;
+    font-size: 18px;
 }
 
-.raridade {
-    font-size: 14px;
-}
-
-.carta-container img {
+.carta img {
     width: 100%;
-    height: 140px;
+    height: 120px;
     object-fit: contain;
     background-color: white;
     border-radius: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.carta p {
+    font-size: 13px;
+    line-height: 1.4;
 }
 
-li {
-    background-color: #0f3460;
-    margin: 8px 0;
-    padding: 8px;
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-conteudo {
+    background-color: white;
+    color: #1a1a2e;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.modal-conteudo button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 18px;
     border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
