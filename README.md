@@ -2,8 +2,6 @@
 
 Projeto integrado em grupo, desenvolvido com HTML e CSS, inspirado na fauna, flora e folclore brasileiro.
 
-O projeto começou como uma coleção de cartas digitais e evoluiu para uma arena com tabuleiro 3x3, mão do jogador e aviso de privacidade (LGPD).
-
 ## Integrantes do Squad
 
 - Luccas — Scrum Master / Gestor
@@ -42,10 +40,22 @@ Nesta etapa, o projeto evoluiu para a estrutura de jogo, com:
 - reaproveitamento das cartas criadas anteriormente;
 - modal de aviso de privacidade (LGPD).
 
+### Sprint 03 — Arena de Duelo
+
+Nesta etapa, a arena foi aprimorada para representar uma partida completa, com:
+
+- organização da interface em 3 colunas utilizando CSS Grid;
+- mão do jogador com 5 cartas;
+- tabuleiro central 3x3;
+- mão do inimigo com 5 cartas;
+- diferenciação visual entre cartas aliadas e inimigas;
+- efeito interativo ao passar o mouse sobre os espaços do tabuleiro;
+- ajustes de dimensionamento e alinhamento da arena.
+
 ## Estrutura do Projeto
 
 ```bash
-Faunadex_Frontend/
+faunadex-frontend/
 ├── index.html
 ├── style.css
 ├── curupira.jpg
@@ -54,10 +64,10 @@ Faunadex_Frontend/
 ├── vitoria-regia.jpg
 └── ipe-amarelo.jpg
 ```
-##
+### Interface com aviso de privacidade
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/496c0d53-0c29-4591-8b96-c77348a9dbaa" />
 
-##
+### Arena de duelo final
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7d945d28-dd6e-4847-a8ad-5e0388080b1e" />
