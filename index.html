@@ -25,55 +25,65 @@
         <p>Tabuleiro 3x3 inspirado na fauna, flora e folclore brasileiro</p>
     </header>
 
-    <main>
+<main class="arena">
 
-        <section id="tabuleiro">
-            <div class="slot" id="slot_1">1</div>
-            <div class="slot" id="slot_2">2</div>
-            <div class="slot" id="slot_3">3</div>
-            <div class="slot" id="slot_4">4</div>
-            <div class="slot" id="slot_5">5</div>
-            <div class="slot" id="slot_6">6</div>
-            <div class="slot" id="slot_7">7</div>
-            <div class="slot" id="slot_8">8</div>
-            <div class="slot" id="slot_9">9</div>
-        </section>
+    <section id="mao-jogador" class="mao mao-aliado">
 
-        <section id="mao-jogador">
+        <div class="carta">
+            <h3>Curupira Guardião</h3>
+            <img src="curupira.jpg" alt="Ilustração do Curupira">
+            <p>Guardião das florestas brasileiras.</p>
+        </div>
 
-            <div class="carta">
-                <h3>Curupira Guardião</h3>
-                <img src="curupira.jpg" alt="Ilustração do Curupira">
-                <p>Guardião das florestas brasileiras, protege a natureza com velocidade e astúcia.</p>
-            </div>
+        <div class="carta">
+            <h3>Onça-Pintada</h3>
+            <img src="onca.jpg" alt="Ilustração da Onça-Pintada">
+            <p>Predadora poderosa da mata brasileira.</p>
+        </div>
 
-            <div class="carta">
-                <h3>Onça-Pintada</h3>
-                <img src="onca.jpg" alt="Ilustração da Onça-Pintada">
-                <p>Predadora poderosa da mata brasileira, possui força e presença dominante.</p>
-            </div>
+        <div class="carta">
+            <h3>Arara-Azul</h3>
+            <img src="arara.jpg" alt="Ilustração da Arara-Azul">
+            <p>Ave rara e colorida.</p>
+        </div>
 
-            <div class="carta">
-                <h3>Arara-Azul</h3>
-                <img src="arara.jpg" alt="Ilustração da Arara-Azul">
-                <p>Ave rara e colorida, representa beleza, liberdade e equilíbrio da natureza.</p>
-            </div>
+        <div class="carta">
+            <h3>Vitória-Régia</h3>
+            <img src="vitoria-regia.jpg" alt="Ilustração da Vitória-Régia">
+            <p>Planta aquática amazônica.</p>
+        </div>
 
-            <div class="carta">
-                <h3>Vitória-Régia</h3>
-                <img src="vitoria-regia.jpg" alt="Ilustração da Vitória-Régia">
-                <p>Planta aquática amazônica, conhecida por sua resistência e beleza natural.</p>
-            </div>
+        <div class="carta">
+            <h3>Ipê-Amarelo</h3>
+            <img src="ipe-amarelo.jpg" alt="Ilustração do Ipê-Amarelo">
+            <p>Árvore símbolo de força e renovação.</p>
+        </div>
 
-            <div class="carta">
-                <h3>Ipê-Amarelo</h3>
-                <img src="ipe-amarelo.jpg" alt="Ilustração do Ipê-Amarelo">
-                <p>Árvore símbolo de força e renovação, trazendo energia ao campo de batalha.</p>
-            </div>
+    </section>
 
-        </section>
+    <section id="tabuleiro">
+        <div class="slot">1</div>
+        <div class="slot">2</div>
+        <div class="slot">3</div>
+        <div class="slot">4</div>
+        <div class="slot">5</div>
+        <div class="slot">6</div>
+        <div class="slot">7</div>
+        <div class="slot">8</div>
+        <div class="slot">9</div>
+    </section>
 
-    </main>
+    <section id="mao-inimigo" class="mao mao-inimigo">
+
+        <div class="carta carta-inimigo">Inimigo 1</div>
+        <div class="carta carta-inimigo">Inimigo 2</div>
+        <div class="carta carta-inimigo">Inimigo 3</div>
+        <div class="carta carta-inimigo">Inimigo 4</div>
+        <div class="carta carta-inimigo">Inimigo 5</div>
+
+    </section>
+
+</main>
 
     <script>
         function aceitarPrivacidade() {
