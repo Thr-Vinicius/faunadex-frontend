@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b431f317-894c-4e3e-bbf1-2868474d4f81" /># Faunadex Arena
+# Faunadex Arena
 
 Projeto integrado em grupo, desenvolvido com HTML e CSS, inspirado na fauna, flora e folclore brasileiro.
 
