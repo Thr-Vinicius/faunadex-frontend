@@ -15,11 +15,14 @@ header h1 {
     margin-bottom: 5px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.arena {
+    width: min(1100px, 95vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 180px 450px 180px;
     gap: 40px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 #tabuleiro {
